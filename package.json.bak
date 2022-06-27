@@ -1,0 +1,84 @@
+{
+    "name": "lifepoint_new",
+    "version": "1.4.2",
+    "private": true,
+    "homepage": "https://www.lifepoint.club/",
+    "authors": [
+        {
+            "email": "SmirnovDS@alfastrah.ru",
+            "name": "Смирнов Дмитрий"
+        },
+        {
+            "name": "Ярославцев Владимир",
+            "email": "IaroslavtsevVIu@alfastrah.ru"
+        }
+    ],
+    "scripts": {
+        "dev": "next dev",
+        "build": "tsc && next build",
+        "build-fast": "next build",
+        "start": "next start",
+        "check": "tsc",
+        "prepare": "husky install",
+        "storybook": "start-storybook -p 6006",
+        "storybook-debug": "start-storybook -p 6006 --debug-webpack",
+        "build-storybook": "build-storybook"
+    },
+    "browserslist": {
+        "production": [
+            "last 1 version",
+            "> 1%",
+            "ie 10"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.6.0",
+        "abortcontroller-polyfill": "^1.7.3",
+        "date-fns": "^2.21.3",
+        "next": "^12.0.10",
+        "next-transpile-modules": "^8.0.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-grid-layout": "^1.2.4",
+        "react-hook-form": "^7.25.1",
+        "react-redux": "^7.2.4",
+        "react-text-mask": "^5.4.3",
+        "react-window": "^1.8.6",
+        "react-window-scroller": "^1.0.10",
+        "swr": "^0.5.6",
+        "text-mask-addons": "^3.8.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.0",
+        "@storybook/addon-actions": "^6.3.12",
+        "@storybook/addon-essentials": "^6.3.12",
+        "@storybook/addon-links": "^6.3.12",
+        "@storybook/react": "^6.3.12",
+        "@svgr/webpack": "^5.5.0",
+        "@types/classnames": "^2.2.11",
+        "@types/node": "^14.14.33",
+        "@types/react": "^17.0.3",
+        "@types/react-dom": "^17.0.11",
+        "@types/react-grid-layout": "^1.1.1",
+        "@types/react-text-mask": "^5.4.10",
+        "@types/react-window": "^1.8.5",
+        "@types/text-mask-addons": "^3.8.1",
+        "babel-loader": "^8.2.3",
+        "classnames": "^2.2.6",
+        "husky": "^6.0.0",
+        "lint-staged": "^10.5.4",
+		"postcss": "^8.0.0",
+        "postcss-flexbugs-fixes": "^5.0.2",
+        "postcss-preset-env": "^6.7.0",
+        "prettier": "2.2.1",
+        "storybook-css-modules-preset": "^1.1.1",
+        "tsconfig-paths-webpack-plugin": "^3.5.1",
+        "typescript": "^4.4.4",
+        "typescript-plugin-css-modules": "^3.2.0"
+    }
+}
